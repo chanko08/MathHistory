@@ -1,0 +1,278 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+
+\title{Fermat's Work and Contributions to Number Theory}
+\author{Alex Bechanko}
+\begin{document}
+\maketitle
+There are many things that Fermat is famous for today, but by far his most widely
+known research was in Number Theory, namely Fermat's Little Theorem, and 
+Fermat's Last Theorem.
+This paper will discuss some of his lesser
+known contributions to Number Theory, which includes the exploration of
+Perfect numbers, as well as the primality of numbers.
+We will also go over one of his more commons methods for proving general results,
+the proof by infinite descent.
+His little theorem will also be thoroughly explained, including several 
+interesting primality results that require his theorem.
+There will also be discussion regarding how Fermat's work in number
+theory was regarded to other mathematicians at the same time period, as
+well as further on into the future. 
+
+\section*{Introduction}
+It is widely regarded that Fermat created modern number theory.
+Most mathematicians, including Fermat, at Fermat's time were focused
+on many topics in mathematics such as slopes of curves and areas under curves,
+there were not many if at all that chose to take a step back, and look at really
+old results with the the lens of the new results to focus in on different areas
+of the old results \cite{Mahoney}. 
+Despite what results Fermat obtained, it's interesting to note that there were
+not many people that were interested in his work related to number theory.
+Any efforts that Fermat made to make his number theory results known were fairly
+useless, as most of his correspondents were not interested in this new field of
+mathematics he was creating.
+As a result, most of his methods for number theory were very difficult or
+impossible to obtain
+for this day and age by historians, because after a he only outlined
+his results for these topics to the many correspondents that he wrote
+to.
+One of the only other places historians were able to find results of his was in
+a copy of one of his mathematics books \emph{Arithmetica} written by Diophantus.
+In fact, even once interest was sparked in his results a century or so later,
+only his results were able to be founded, and not his results.
+So later mathematicians found it much easier to create their own methods
+instead of recreating his \cite{Mahoney}.
+
+\section*{Exploration of Perfect Numbers and Primality}
+
+\subsection*{Perfect Numbers}
+One of Fermat's first correspondents was the Marin Mersenne, who was said to be
+the center of of mathematics in the 16th century \cite{Mersenne}.
+Mersenne had heard of Fermat even before this correspondence, in particular it
+was Fermat's observations of the divisibility of numbers that had garnered 
+Mersenne's attention.
+Including this was perfect numbers, and their relations to prime
+numbers \cite{Mahoney}.
+Perfect numbers are numbers whose proper positive divisors add up to
+themselves \cite{PerfectNumbers}.
+Equivalently, you could say that a number is perfect if its positive divisors
+add up to twice the number.
+A simple example of a perfect number would be 6, whose proper divisors are
+1,2, and 3, which sum to 6.
+
+There were a few reasons for mathematicians interest in perfect numbers.
+The first reason was that while there was a way to generate perfect numbers,
+the way to generate them itself was a very difficult process.
+In particular, in Euclid's \emph{Elements} has the following result.
+If $2^{n+1} + 1$ is prime, then \[ 2^n(2^{n+1} + 1)\]
+is a perfect number \cite{Euclid,Mahoney}.
+So the perfect number problem had transformed into methods for
+finding prime numbers.
+
+\subsection*{Mersenne Primes}
+It is through the emphasis on the topic of primality that Fermat had garnered the
+attention of a less well-known number theorist named
+Bernard Frenicle de Bessy \cite{Mahoney}.
+It was previously said that Fermat tended to hold his methods for finding many
+of his results to himself, but thanks to the correspondence with Bernard we
+know some of the methods Fermat used to determine primality of numbers.
+The first proposition he gave was this.
+Given a positive integer $n$, if $n$ is composite, then $2^n - 1$ is also 
+composite.
+Indeed this can be shown with a direct factoring.
+Let $n = ab$, then
+\[2^{ab} - 1 = (2^a - 1)(1 + 2^a + 2^{2a} + \dots +2^{(b-1)a} ). \]
+The next proposition that he showed in his correspondence was that given a 
+positive integer $p$, if $p$ is an odd prime then $2p$ divides $2^p-2$.
+Put in a simpler way, if $p$ is an odd prime then $p$ divides $2^{p-1} - 1$.
+Indeed, this is an application of Fermat's little theorem, however it is thought
+that Fermat had not yet developed the general theorem \cite{Ball, Mahoney}.
+Finally, Fermat also stated in his correspondence with Bernard that given an
+integer $p$, if $p$ is an odd prime then the only divisors of $2^p -1$ are of
+the form $2pk +1$ for some integer $k$.
+Again, this was another application of Fermat's little theorem, but to get a
+useful list of numbers to check divisibility with \cite{MersennePrime}.
+Later on, mathematicians and historians alike would come to know prime numbers
+of the form $2^p -1$ as Mersenne primes, despite the fact that it was Fermat
+that first brought light onto these type of numbers \cite{Mahoney}.
+Admittedly, the main reason for this was due to Fermat naming a different set
+of numbers after himself.
+It was thanks to Marin Marsenne for computing some of the Mersenne primes that
+gave these prime numbers his last name.
+
+\subsection*{Fermat's Little Theorem}
+Later on in Fermat's correspondence with Bernard and Mersenne, he finally divulged
+that he had a general theorem with which he was deriving some of his results.
+Although, the form is a bit different to what we see today \cite{Mahoney}: 
+    \begin{quote}
+        Without exception, every prime number measures one of the powers $- 1$    
+        of any progression whatever, and the exponent of the said power is a
+        submultiple of the given prime number $-1$.
+        Also, after one has found the first power that satisfies the problem,
+        all those which the exponents are multiples of the exponent of the first
+        will satisfy the problem.
+    \end{quote}
+Perhaps it is a little cryptic, but in a more succinct form, he is saying that
+given a prime $p$, and a sequence of $a^t - 1$ where $a$ and $t$ are positive
+integers, then $p$ divides at least one member of that sequence, and $t$ divides
+$p-1$.
+He then goes on to say that $p$ will divide all members of the sequence of the
+form $a^{tk} - 1$ for all positive integers $k$.
+In modern notation, if $p$ is prime and any integer $a$,
+\[a^p \equiv a \pmod{p}. \]
+Fermat only spoke of this theorem in this letter to Bernard, and probably due to
+the shift in interests towards Pythagorean triples, there was no one pressing
+to have Fermat give his proof, or at least an outline of the proof.
+
+\subsection*{Fermat Numbers}
+As discussed earlier, despite having been the first documented to research 
+Mersenne Primes, these numbers were not given Fermat's name due to the existence
+of a different set of numbers that Fermat named after himself.
+A Fermat number is a number of the form $2^{2^n} +1$.
+This number arose from his work with Mersenne numbers, and indeed as he
+researched them he conjectured that all Fermat numbers are prime numbers.
+Indeed, because of how quickly Fermat numbers grow in size he could only
+test for cases $0,1,2,3,4$, which are
+    \[\{3, 5, 17, 257, 65537\}. \]
+What's interesting about this conjecture is that this is one of the few Fermat
+was resolute on it being true, and had tried many times to prove this result.
+It was only later in the late 17th century that Leonhard Euler showed that the
+this conjecture was not true by giving a factorization of the 5th case,
+    \[2^{2^5}+1 = 4294967297 = 641 \cdot 6700417. \]
+Fermat even stated in multiple letters to Mersenne of his confidence of this
+conjecture, as well as the frustration with finding a proof for
+this result \cite{Mahoney, Ball}.
+It is conjectured by a few historians/mathematicians that Fermat had used some
+form of a proof by infinite descent to help prove his conjecture, but there is
+nothing stated in the letters about this to Bernard or Mersenne.
+Another possibility on how he got this result wrong was that he was notoriously
+bad at structuring his results for publishing, so it is conjectured
+that he made some errors in his process here as well.
+
+\section*{Rediscovery of the Proof \emph{Descente Infinie}}
+One of the peculiarities of Fermat was that he was one of the few of his time
+to regularly use the proofing method called proof \emph{descente infinie}, or
+proof by infinite descent.
+The proof by infinite descent is a proof method that aims to prove the negation
+of a claim.
+To do this you would assume that the opposite holds for some arbitrary
+positive integer value.
+If you could infer from this value that a smaller value existed, then you could
+reach the conclusion that there are infinitely many such smaller values.
+However, this would be a contradiction, because there are not an infinite amount
+of positive integers below any specified positive integer, and thus the claim
+would be not true.
+
+We first learn of Fermat's use of this method of proving from his correspondence
+with a man named Christiaan Huygens \cite{Mahoney, Wirth}.
+Christiaan was among other things a well known Dutch mathematician.
+One of his works that he is known for was the creation of the first book
+on probability theory called \emph{De ratiociniis in ludo aleae} \cite{Huygens}.
+Fermat wrote an example of this method to Christiaan in response to Christiaan's
+curiosities of his methods \cite{Mahoney}:
+
+\begin{quotation}
+    If there were any right triangle that had an area equal to a square,
+    then there would be another triangle less than that one which would
+    have the same property.
+    If there were a second less than the first which had the same property,
+    there would by similar reasoning be a third less than the second
+    which would have the same property, and then a fourth, a fifth, etc.,
+    descending \emph{ad infinitum}.
+    Now it is the case that, given a number, there are not infinitely many
+    numbers less than that one in descending order (I mean always to speak in
+    integers). 
+    Whence one concludes that there is a square \ldots
+
+    I do not add the reasoning by which I infer that, if there was a right
+    triangle of that nature, there would be another of the same nature less
+    than the first, because the argument would be too long and because that is
+    the whole mystery of my method.
+    I will be content if the Pascals and Robervals and so many learned men
+    search for it according to my indications.
+\end{quotation}
+
+So as per Fermat's way of speaking with his correspondents, he left showing that
+the method worked as an exercise for them to work out.
+
+Later on closer to modern day, historians would find Fermat's copy of 
+Diophantus' \emph{Arithmetica}, and in it they would find one of the few proofs
+that they would ever find written by Fermat \cite{Wirth}.
+The result that he proved with this method was that if a triangle has integer
+side lengths, then the area of the triangle can not be represented by a square
+with integer side length.
+More succinctly, if $x_0,x_1 \in \mathbf{N}$ and $x_2,x_3 \in \mathbf{N}$ and
+and $x_0^2 + x_1^2 = x_2^2$, then \[\frac{x_0x_1}{2} \neq x_3^2. \]
+The way Fermat writes this proof is similar to how he writes to his correspondents,
+that is he leaves many parts left to the reader to prove if they do not believe
+Fermat's assertions \cite{Wirth}.
+
+
+
+\section*{Results Based off Fermat's Work}
+
+\begin{thebibliography}{9}
+\bibitem{Ball}
+    Ball, W. W. Rouse. \emph{A Short Account of the History of Mathematics}. New York: Dover, 1960. Print.
+
+\bibitem{Mahoney}
+    Mahoney, Michael S. \emph{The Mathematical Career of Pierre De Fermat, 1601-1665}. Princeton, NJ: Princeton UP, 1994. Print.
+
+\bibitem{Wirth}
+    Wirth, Claus-Peter.
+    \emph{A Self-Contained and Easily Accessible Discussion of the Method of Descente Infinie and Fermat's Only Explicitly Known Proof by Descente Infinie}.
+    Seki Working-Paper (2006): n.\ pag. Web.
+
+\bibitem{Kleiner}
+    Kleiner, Israel.
+    \emph{From Fermat to Wiles: Fermat's Last Theorem Becomes a Theorem}.
+    Elemente Der Mathematik 55.1 (2000): 19-37. Print.
+
+\bibitem{Euclid}
+    Euclid. Euclid's Elements;. N.p.: Dutton, 1933. Print.
+
+\bibitem{Miller}
+    Miller, Gary L.
+    \emph{Riemann's Hypothesis and Tests for Primality}.
+    Journal of Computer and System Sciences 13.3 (1976): 300-17. Print.
+
+\bibitem{MersennePrimeTests}
+    Jason Wojciechowski.
+    \emph{Mersenne Primes, An Introduction and Overview}. 2003.
+
+%\bibitem{wFermat}
+%    \emph{Pierre De Fermat}. Wikipedia. Wikipedia, n.d. Web. $<$wikipedia.org$>$.
+
+\bibitem{PerfectNumbers}
+    \emph{Perfect Numbers}. Wikipedia. Wikipedia, n.d. Web. $<$wikipedia.org$>$.
+
+\bibitem{Mersenne}
+    Bernstein, Peter L. (1996).
+    \emph{Against the Gods: The Remarkable Story of Risk}. John Wiley \& Sons.\ p. 59.
+%nbibitem{wFermatsLittleThereom}
+%    \emph{Fermat's Little Theorem}.  Wikipedia. Wikipedia, n.d. Web. $<$wikipedia.org$>$.
+
+%\bibitem{wFermatsLastTheorem}
+%    \emph{Fermat's Last Theorem}.  Wikipedia. Wikipedia, n.d. Web. $<$wikipedia.org$>$.
+
+\bibitem{FermatTest}
+    \emph{Fermat Primality Test}. Wikipedia. Wikipedia, n.d. Web. $<$wikipedia.org$>$.
+
+%\bibitem{wLucasLehmerTest}
+%    \emph{Lucas-Lehmer Primality Test}.  Wikipedia. Wikipedia, n.d. Web. $<$wikipedia.org$>$.
+
+%\bibitem{wMillerRabinTest}
+%    \emph{Miller-Rabin Primality Test}.  Wikipedia. Wikipedia, n.d. Web. $<$wikipedia.org$>$.
+
+\bibitem{MersennePrime}
+    \emph{Mersenne Primes}. Wikipedia. Wikipedia, n.d. Web. $<$wikipedia.org$>$.
+
+\bibitem{Huygens}
+    \emph{Christiaan Huygens}. Wikipedia. Wikipedia, n.d. Web. $<$wikipedia.org$>$.
+
+\end{thebibliography}
+
+\end{document}
+
