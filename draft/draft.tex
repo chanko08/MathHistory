@@ -26,26 +26,26 @@ well as further on into the future.
 
 
 \section*{Introduction}
-It is widely regarded that Fermat created modern number theory.
-Most mathematicians, including Fermat, at Fermat's time were focused
-on many topics in mathematics such as slopes of curves and areas under curves,
-there were not many if at all that chose to take a step back, and look at really
-old results with the the lens of the new results to focus in on different areas
-of the old results \cite{Mahoney}. 
-Despite what results Fermat obtained, it's interesting to note that there were
+Fermat is widely regarded as having created modern number theory.
+Most mathematicians of Fermat's time were focused
+on topics in mathematics such as slopes of curves and areas under curves.
+There were not many that chose to take a step back, and look at 
+results from the greecian times with the lens of results from the
+renaissance to focus in on different areas of mathematics obtained by greecians \cite{Mahoney}. 
+Despite what results Fermat obtained, it is interesting to note that there were
 not many people that were interested in his work related to number theory.
-Any efforts that Fermat made to make his number theory results known were fairly
-useless, as most of his correspondents were not interested in this new field of
+The efforts that Fermat made to make his number theory results known were fairly
+ineffective, as most of his correspondents were not interested in this new field of
 mathematics he was creating.
-As a result, most of his methods for number theory were very difficult or
+As a result, most of his methods for number theory are very difficult or
 impossible to obtain
-for this day and age by historians, because after a he only outlined
+for this day and age by historians, because he only outlined
 his results for these topics to the many correspondents that he wrote
 to.
 One of the only other places historians were able to find results of his was in
-a copy of one of his mathematics books \emph{Arithmetica} written by Diophantus.
+his copy of \emph{Arithmetica} written by Diophantus.
 In fact, even once interest was sparked in his results a century or so later,
-only his results were able to be founded, and not his results.
+only his results were able to be found, and not his methods.
 So later mathematicians found it much easier to create their own methods
 instead of recreating his \cite{Mahoney}.
 
@@ -69,7 +69,7 @@ There were a few reasons for mathematicians interest in perfect numbers.
 The first reason was that while there was a way to generate perfect numbers,
 the way to generate them itself was a very difficult process.
 In particular, in Euclid's \emph{Elements} has the following result.
-If $2^{n+1} + 1$ is prime, then \[ 2^n(2^{n+1} + 1)\]
+If $2^{n+1} - 1$ is prime, then \[ 2^n(2^{n+1} - 1)\]
 is a perfect number \cite{Euclid,Mahoney}.
 So the perfect number problem had transformed into methods for
 finding prime numbers.
@@ -96,21 +96,21 @@ that Fermat had not yet developed the general theorem \cite{Ball, Mahoney}.
 Finally, Fermat also stated in his correspondence with Bernard that given an
 integer $p$, if $p$ is an odd prime then the only divisors of $2^p -1$ are of
 the form $2pk +1$ for some integer $k$.
-Again, this was another application of Fermat's little theorem, but to get a
-useful list of numbers to check divisibility with \cite{MersennePrime}.
+Again, this was another application of Fermat's little theorem, but to get a list
+of candidates fo factors of $2^p-1$ \cite{MersennePrime}.
 Later on, mathematicians and historians alike would come to know prime numbers
 of the form $2^p -1$ as Mersenne primes, despite the fact that it was Fermat
 that first brought light onto these type of numbers \cite{Mahoney}.
-Admittedly, the main reason for this was due to Fermat naming a different set
+Admittedly, the main reason for this was due to Fermat's naming a different set
 of numbers after himself.
-It was thanks to Marin Mersenne for computing some of the Mersenne primes that
-gave these prime numbers his last name.
+Mersenne numbers were named after Marin Mersenne, who continued working on
+this form of numbers after his correspondence with Fermat.
 
 
 \subsection*{Fermat's Little Theorem}
-Later on in Fermat's correspondence with Bernard and Mersenne, he finally divulged
+Later in Fermat's correspondence with Bernard and Mersenne, he finally divulged
 that he had a general theorem with which he was deriving some of his results.
-Although, the form is a bit different to what we see today \cite{Mahoney}: 
+However, the form is a bit different to what we see today \cite{Mahoney}: 
     \begin{quote}
         Without exception, every prime number measures one of the powers $- 1$    
         of any progression whatever, and the exponent of the said power is a
@@ -133,17 +133,18 @@ to have Fermat give his proof, or at least an outline of the proof.
 
 
 \subsection*{Fermat Numbers}
-As discussed earlier, despite having been the first documented to research 
-Mersenne Primes, these numbers were not given Fermat's name due to the existence
-of a different set of numbers that Fermat named after himself.
+As discussed earlier, despite having been the first mathematician documented to
+have researched Mersenne Primes, these numbers were not given Fermat's name due to the existence
+of a different set of numbers that were named after Fermat.
 A Fermat number is a number of the form $2^{2^n} +1$.
 This number arose from his work with Mersenne numbers, and indeed as he
 researched them he conjectured that all Fermat numbers are prime numbers.
 Indeed, because of how quickly Fermat numbers grow in size he could only
 test for cases $0,1,2,3,4$, which are
     \[\{3, 5, 17, 257, 65537\}. \]
-What's interesting about this conjecture is that this is one of the few Fermat
-was resolute on it being true, and had tried many times to prove this result.
+Later mathematicians would show that not all Fermat numbers were primes.
+This is interesting because Fermat was resolute on it being true,
+and had tried many times to prove this result.
 It was only later in the late 17th century that Leonhard Euler showed that the
 this conjecture was not true by giving a factorization of the 5th case,
     \[2^{2^5}+1 = 4294967297 = 641 \cdot 6700417. \]
@@ -154,11 +155,16 @@ It is conjectured by a few historians/mathematicians that Fermat had used some
 form of a proof by infinite descent to help prove his conjecture, but there is
 nothing stated in the letters about this to Bernard or Mersenne.
 Another possibility on how he got this result wrong was that he was notoriously
-bad at structuring his results for publishing, so it is conjectured
-that he made some errors in his process here as well.
+bad at structuring his results so that others could understand it,
+so it is conjectured that he made some errors in his process through the
+notes he kept for himself as well.
 
 
 \section*{Rediscovery of the Proof \emph{Descente Infinie}}
+Before Fermat, there were Greek mathematicians that used this proof method.
+One such example if the Greek mathematician Hippasus of Metapontum, who
+used this method to prove the irrationality of the golden number
+$\frac{1}{2}(1+\sqrt{5})$ \cite{Wirth}.
 One of the peculiarities of Fermat was that he was one of the few of his time
 to regularly use the proofing method called proof \emph{descente infinie}, or
 proof by infinite descent.
@@ -168,14 +174,14 @@ To do this you would assume that the opposite holds for some arbitrary
 positive integer value.
 If you could infer from this value that a smaller value existed, then you could
 reach the conclusion that there are infinitely many such smaller values.
-However, this would be a contradiction, because there are not an infinite amount
+However, this would be a contradiction, because there are not an infinite number
 of positive integers below any specified positive integer, and thus the claim
 would be not true.
 
-We first learn of Fermat's use of this method of proving from his correspondence
+We first learn of Fermat's use of this proof method from his correspondence
 with a man named Christiaan Huygens \cite{Mahoney, Wirth}.
-Christiaan was among other things a well known Dutch mathematician.
-One of his works that he is known for was the creation of the first book
+Christiaan was, among other things, a well known Dutch mathematician.
+One of his well-known works was the first book
 on probability theory called \emph{De ratiociniis in ludo aleae} \cite{Huygens}.
 Fermat wrote an example of this method to Christiaan in response to Christiaan's
 curiosities of his methods \cite{Mahoney}:
@@ -204,8 +210,9 @@ curiosities of his methods \cite{Mahoney}:
 So as per Fermat's way of speaking with his correspondents, he left showing that
 the method worked as an exercise for them to work out.
 
-Later on closer to modern day, historians would find Fermat's copy of 
-Diophantus' \emph{Arithmetica}, and in it they would find one of the few proofs
+Later, Fermat's copy of 
+Diophantus' \emph{Arithmetica} would be published by his son,
+and in it they would find one of the few proofs
 that they would ever find written by Fermat \cite{Wirth}.
 The result that he proved with this method was that if a triangle has integer
 side lengths, then the area of the triangle can not be represented by a square
@@ -218,7 +225,7 @@ Fermat's assertions \cite{Wirth}.
 
 
 \section*{Fermat's Last Theorem}
-Perhaps one of Fermat's most infamous results is his last theorem.
+Fermat's most infamous result is his last theorem.
 As quoted by Fermat in his copy of
 Diophantus' \emph{Arithmetica} \cite{Kleiner}:
 \begin{quote}
@@ -256,9 +263,9 @@ the case where at least one of $x,y,z$ are divisible by a prime $p$ and where
 none of them are divisible by $p$ \cite{Kleiner}.
 
 It wasn't until a relation was found between Fermat's last theorem and elliptic
-curves that a bridge to an full blown general proof would be found \cite{Kleiner}.
+curves that a bridge to a general proof would be found \cite{Kleiner}.
 Once a relation to elliptic curves was found, another connection called the
-Taniyama-Shimura conjecture was found, which was proven to be very connected to
+Taniyama-Shimura conjecture was found, which was proven to be closely connected to
 Fermat's last theorem.
 The Taniyama-Shimura conjecture is a result that connects topology and number
 theory.
@@ -266,7 +273,8 @@ At a high level overview, it states that every rational elliptic curve is a
 modular form in disguise, where a modular form is a term to describe a function
 in topology.
 It turns out that Fermat's last theorem was so connected to this conjecture,
-that it was proven by Ken Ribet that one implied the other \cite{Kleiner}.
+that it was proven by Ken Ribet that the Taniyama-Shimura conjecture implied
+that Fermat's last theorem \cite{Kleiner}.
 
 At this point, Andrew Wiles became interested in proving Fermat's Last
 Theorem \cite{Kleiner}.
@@ -293,9 +301,9 @@ What Wiles had proven was that the Taniyama-Shimura conjecture holds for a certa
 class of elliptic curves called semi-stable elliptic curves \cite{Kleiner}.
 
 Unfortunately, Wiles' initial proof was reviewed by a board of mathematicians, and
-was found to have a hard to fix problem.
+was found to have a nontrivial gap that needed to be filled.
 It wasn't until a year later that with the help of his former PhD student 
-Richard Taylor that he was able to publish a fully working proof \cite{Kleiner}.
+Richard Taylor that he was able to publish a complete \cite{Kleiner}.
 
 
 \section*{Primality Tests Based off Fermat's Work}
@@ -313,16 +321,19 @@ will also focus on results and applications formed around those results.
 \subsection*{Fermat Primality Test}
 One application of Fermat's little theorem is the Fermat primality test.
 As the name describes it is an algorithm for determining primality.
-To understand the concept, we review Fermat's little theorem.
-Fermat's little theorem states that if a integer $p$ is prime, and given
+To understand the concept, we review Fermat's little theorem, which
+states that if an integer $p$ is prime, and given
 another integer $a$ where $1 \le a \le p$, then \[a^p \equiv a \pmod{p}. \]
-So to test if $p$ is prime, we have to test many different values of $a$ to 
-determine if $p$ is prime.
-Keep in mind that this test is what is called a probabilistic test.
+So to be confident that $p$ is prime, we can test to see if many different integers
+hold this relation given the number $p$.
+Keep in mind that this test is what is called a probabilistic test, so
+this test does not guarantee that $p$ is prime.
+If there was a number $a$ where this test fails, the it can be inferred that $p$ is
+composite.
 While you could test the full range of $a$ values for any possible prime $p$,
 this would be a slow way to do it.
 Instead, try for a some number of $a$ values, if Fermat's little theorem holds
-for those values of $a$ and $p$, then it is likely that $p$ is prime.
+for those values of $a$ and $p$, then it is more likely that $p$ is prime.
 Even then, there is the possibility of having a number $p$ that holds 
 Fermat's little theorem, and is not a prime number.
 One such number is 561, but there are an infinite amount of these
@@ -348,10 +359,10 @@ A basic algorithm is listed below \cite{FermatTest}:
 So this is a really simple algorithm to create to do a quick check for 
 compositeness if you require.
 
-There is a similar but more powerful test to this one though that is
+There is a similar but more powerful test
 called the Miller-Rabin primality test.
-The way the Miller-Rabin test is a little similar to how the Fermat test works,
-there are a few key differences.
+The way the Miller-Rabin test is similar to how the Fermat test works,
+but there are a few key differences.
 The first difference is that the Miller-Rabin test relies on
 \begin{equation}
     x^2 -1 \equiv (x-1)(x+1) \pmod{p} \label{miller1}
@@ -360,7 +371,7 @@ being true for prime numbers $p$ \cite{Miller}.
 Note that this implies that $x$ is either congruent to $1$ or $-1$ modulo $p$.
 The second key difference is that it uses Fermat's little theorem in a slightly
 different way.
-If we test only odd numbers of primality, then we know that $n-1$ can be
+If we test only odd numbers $n$ for primality, then we know that $n-1$ can be
 decomposed into the form $2^sd$, where $d$ is odd and $s >0$.
 If $p$ is prime and we take square roots of this number, we should expect that
 the square roots should still be either $-1$ or $1$.
@@ -393,7 +404,7 @@ Here is an example algorithm for testing primality with the Miller-Rabin test.
 \end{algorithmic}
 \end{algorithm}
 
-While clearly this is a bit more complex of an algorithm, it also is a much
+While clearly this is more complex of an algorithm, it also is a much
 better algorithm than the Fermat test due to this algorithm's method of testing.
 Also, there is a version of the Miller-Rabin test that is deterministic.
 That is, it can completely determine whether a number is prime or composite.
@@ -433,9 +444,9 @@ As the algorithm makes really obvious, the expensive part of this algorithm is
 calculating the residue.
 
 \section*{Conclusion}
-While the amount of Fermat's contributions to number theory was much smaller than
-the other areas he contributed, the amount that he did contribute really
-kick started the field of number theory.
+While Fermat's documented contributions to number theory were smaller in number
+than the other areas he contributed, the amount that he did contribute 
+started the completely new field of number theory.
 He was both an interesting and unique mathematician for the 16th century.
 
 
